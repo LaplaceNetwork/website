@@ -3349,28 +3349,47 @@
   from {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    visibility: visible;
+    opacity: .5;
+    height: auto!important;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    visibility: visible;
+    height: auto!important;
+    opacity: 1;
   }
 }
+@-moz-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    opacity: .5;
+    height: auto!important;
 
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    height: auto!important;
+    opacity: 1;
+  }
+}
 @keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    visibility: visible;
+    opacity: .5;
+    height: auto!important;
 
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    visibility: visible;
+    height: auto!important;
+    opacity: 1;
   }
 }
 

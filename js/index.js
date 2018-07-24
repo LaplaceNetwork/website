@@ -1,46 +1,31 @@
-$(function() {
+$(function () {
   var isMobile = window.innerWidth < 866;
-  $(".header .nav").on("click", "li", function() {
+  $(".header .nav").on("click", "li", function () {
     var block = $(this).data("block");
-    if(block == "cn" || block == "en") {
+    if (block == "cn" || block == "en") {
       switchLanguage(block);
-    }
-    else {
+    } else {
       handleNav.call(this);
     }
   });
+
   function switchLanguage(block) {
     $("[data-local]").each(function () {
       var lan = $(this).data('local');
       $(this).text(i18n[block][lan]);
     })
   }
+
   function handleNav() {
     var block = $(this).data("block");
-    $(this)
-      .siblings("li")
-      .removeClass("textColor");
-    $(this).addClass("textColor");
-    $(".block").removeClass("active");
-    $("." + block).addClass("active");
     $(window).scrollTop($("." + block).offset().top - 65);
-    if (block === "alloc") {
-      renewCircle();
-    }
-    if (block != "main") {
-      isMobile ? $(".mlogo").fadeIn() : $(".logo").fadeIn();
-      $(".hamburger").addClass("changeColor");
-    } else {
-      $(".logo,.mlogo").hide();
-      $(".hamburger").removeClass("changeColor");
-    }
   }
-  $(".mnav-layer .nav").on("click", "li", function() {
+  $(".mnav-layer .nav").on("click", "li", function () {
     $("#hamburger-1").trigger("click");
     handleNav.call(this);
   });
 
-  $(".qa").on("click", ".qa-row", function() {
+  $(".qa").on("click", ".qa-row", function () {
     if ($(this).hasClass("active")) {
       $(this)
         .removeClass("active")
@@ -58,48 +43,73 @@ $(function() {
     $(".mnav-layer").slideUp();
     $("body").removeClass("noscroll");
   }
-  function getBlock(sh) {
-    if (sh < 500) {
-      return "main";
-    } else if (sh >= 800 && sh < 1500) {
-      return "base";
-    } else if (sh >= 1500 && sh < 2399) {
-      return "alloc";
-    } else if (sh >= 2399 && sh < 3399) {
-      return "route";
-    } else if (sh >= 3399 && sh < 3599) {
-      return "news";
-    } else if (sh >= 3599) {
-      return "qa";
-    }
-    return "main";
-  }
-  $(window)
-    .scroll(function() {
-      var sh = $(window).scrollTop();
-      var key = getBlock(sh);
-      if (!$("." + key).hasClass("active")) {
-        $(".block").removeClass("active");
-        if (key != "main") {
-          isMobile ? $(".mlogo").fadeIn() : $(".logo").fadeIn();
-          $(".hamburger").addClass("changeColor");
-        }
 
-        $("." + key).addClass("active");
-        var tab = $(".header .nav li[data-block=" + key + "]");
-        tab.addClass("textColor");
-        tab.siblings("li").removeClass("textColor");
-        if (key === "alloc") {
-          renewCircle();
-        } else if (key == "main") {
-          $(".logo,.mlogo").hide();
-          $(".hamburger").removeClass("changeColor");
+  function getBlockConfig() {
+    var config = {};
+    $(".block").each(function () {
+      config[$(this).data('block')] = {
+        top: $(this).offset().top,
+        height: $(this).outerHeight()
+      }
+    });
+    return config;
+  }
+  var wh = $(window).height();
+
+  function findInViewport(sh) {
+    var dh, dah, store = [],
+      hideStore = [];
+    var config = getBlockConfig();
+    for (var block in config) {
+      if (config.hasOwnProperty(block)) {
+        dh = config[block].top + config[block].height / 2;
+        dah = config[block].top + config[block].height;
+        if ((dah - sh > 200) && dh < (sh + wh)) {
+          //在市口
+          store.push(block)
+        } else {
+          hideStore.push(block)
         }
       }
+    }
+
+    return {
+      store: store,
+      hideStore: hideStore
+    }
+  }
+
+  function activeTab(key) {
+    var tab = $(".header .nav li[data-block=" + key + "]");
+    tab.addClass("textColor");
+    tab.siblings("li").removeClass("textColor");
+    if (key === "alloc") {
+      renewCircle();
+    } else if (key == "main") {
+
+    }
+  }
+  $(window)
+    .scroll(function () {
+      var sh = $(window).scrollTop();
+      var blocks = findInViewport(sh);
+      blocks.store.forEach(function (bk) {
+        var $bk = $("." + bk);
+        if (!$bk.hasClass("active")) {
+          $bk.addClass("active");
+          activeTab(bk);
+        }
+      });
+      blocks.hideStore.forEach(function (bk) {
+        var $bk = $("." + bk);
+        if ($bk.hasClass("active")) {
+          $bk.removeClass("active")
+        }
+      })
     })
     .trigger("scroll");
 
-  $("#hamburger-1").click(function() {
+  $("#hamburger-1").click(function () {
     if ($(this).hasClass("is-active")) {
       $(this).removeClass("is-active");
       closeLayer();
@@ -117,7 +127,7 @@ $(function() {
       "border-right": "none",
       "border-left": "4px solid rgba(35, 188, 102, 1)"
     });
-    $(".timeline .t-node-cont").each(function() {
+    $(".timeline .t-node-cont").each(function () {
       $(this)
         .parent()
         .css({

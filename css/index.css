@@ -1,23 +1,43 @@
 @charset "UTF-8";
-.clear, .clearfix:after {
+.clear,
+.clearfix:after {
   height: 0;
   clear: both;
   display: block;
 }
 
-.clear, :after, :before, article, aside, dialog, figure, footer, header, nav, section {
+.clear,
+:after,
+:before,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+nav,
+section {
   display: block;
 }
 
-:focus, a, button, input, label, select, textarea {
+:focus,
+a,
+button,
+input,
+label,
+select,
+textarea {
   outline: 0;
 }
 
-html, table {
+html,
+table {
   width: 100%;
 }
 
-.btn, a, a:hover {
+.btn,
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -29,16 +49,44 @@ html, table {
   content: " ";
 }
 
-blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
   margin: 0;
   padding: 0;
 }
 
-.btn-circle, .btn-square {
-  padding: 0 !important;
-}
 
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   font-weight: 400;
 }
@@ -47,39 +95,25 @@ textarea {
   resize: none;
 }
 
-address, cite, dfn, em, var {
-  font-style: normal;
-}
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-fieldset, img {
+fieldset,
+img {
   border: 0;
   vertical-align: bottom;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
 
 * {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  height: 100%;
-  font-size: 100px;
-}
-
 body {
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
@@ -97,47 +131,15 @@ img {
   /* display: inline-block */
 }
 
-body, button, input, select, textarea {
+body,
+button,
+input,
+select,
+textarea {
   word-wrap: break-word;
   font-family: "Microsoft Yahei", arial, Helvetica;
   font-size: 14px;
 }
-
-@media screen and (max-width: 768px) {
-  body, button, input, select, textarea {
-    font-size: 12.6px;
-  }
-}
-
-a, a:hover {
-  color: inherit;
-}
-
-.table {
-  display: table;
-}
-
-.table .thead {
-  display: table-caption;
-}
-
-.table .tbody {
-  display: table-row-group;
-}
-
-.table .tr {
-  display: table-row;
-}
-
-.table .td, .table .th {
-  display: table-cell;
-  vertical-align: inherit;
-}
-
-.f-cr-base .f-cr-icon, .f-cr-style-1 .f-cr-icon, .team2 .more span, .time-list li .icon i img {
-  vertical-align: middle;
-}
-
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
   background-color: #ccc;
@@ -157,13 +159,15 @@ a, a:hover {
   background: rgba(51, 51, 51, 0.7);
 }
 
-::-webkit-scrollbar-thumb:active, ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:hover {
   background: #333;
   height: 50px;
   -webkit-border-radius: 0;
 }
 
-body, html {
+body,
+html {
   scrollbar-track-color: #ccc;
   scrollbar-face-color: #333;
   scrollbar-shadow-color: #333;
@@ -173,7 +177,8 @@ body, html {
   scrollbar-darkshadow-color: #fff;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -202,9 +207,13 @@ body {
   line-height: 44px;
 }
 
+.header .logo-box {
+  display: inline-block;
+  height: 44px;
+  padding-top: 7px;
+}
 .header .logo {
-  display: none;
-  /* width: 110px; */
+  width: 129px
 }
 
 .fr {
@@ -243,11 +252,11 @@ body {
   color: #31c27c;
 }
 
-.header .nav {
+.header>.nav {
   display: inline-block;
 }
 
-.header .nav li {
+.header>.nav li {
   display: inline-block;
   padding: 0 5px;
 }
@@ -280,10 +289,10 @@ body {
 
 .main-title {
   overflow: hidden;
-  width: 500px;
+  width: 413px;
   margin: 0 auto;
   background: url(../img/logo.png) no-repeat 0 center;
-  background-size: 37% auto;
+  background-size: 30% auto;
 }
 
 .milogo {
@@ -354,16 +363,18 @@ body {
 
 .b-info {
   color: #9b9b9b;
-  visibility: hidden;
+  opacity: 0;
+  height: 0;
 }
 
-.base.active .b-info, .b-col.swiper-slide-active .b-info {
+.base.active .b-info,
+.b-col.swiper-slide-active .b-info {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
@@ -385,7 +396,7 @@ body {
   font-size: 20px;
 }
 
-.alloc {
+.alloc,.jieshuo {
   color: #4a4a4a;
   text-align: center;
 }
@@ -401,37 +412,52 @@ body {
   color: #9b9b9b;
 }
 
-.a-tit {
+/* .a-tit {
   margin-top: 80px;
-}
+} */
 
-.a-p-row {
+.a-progress table tr {
   line-height: 45px;
 }
-
+.a-progress table {
+  color: #4a4a4a;
+  font-size: 14px
+}
+.a-progress table tr td:nth-child(2) {
+  width: 45%
+}
 .apr-indi-wrap {
-  display: inline-block;
-  width: 300px;
+  display: block;
   height: 8px;
   position: relative;
   text-align: left;
+  margin: 0 12px
 }
 
 .apr-indicator {
+  position: relative;
+  z-index: 99;
   display: inline-block;
-  width: 200px;
+  height: 8px;
+}
+
+.apr-indi {
+  display: inline-block;
   height: 8px;
   background: rgba(49, 194, 124, 1);
   border-radius: 4px;
-  position: relative;
-  z-index: 99;
 }
-
-.alloc.active .apr-indicator {
+.apr-text {
+  padding-left: 4px
+}
+.jieshuo {
+  padding-top: 0
+}
+.jieshuo.active .apr-indi {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-name: slowGrow;
   animation-name: slowGrow;
 }
@@ -439,7 +465,7 @@ body {
 .apr-indi-line {
   display: inline-block;
   height: 0;
-  width: 300px;
+  width: 100%;
   border-top: 2px solid rgba(229, 229, 229, 1);
   position: absolute;
   left: 0;
@@ -597,10 +623,6 @@ a {
   animation-name: slideInLeft;
 }
 
-.qa .qa-row:first-child p {
-  display: block;
-}
-
 .qa.active .qa-row:first-child {
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
@@ -682,19 +704,21 @@ footer h1 {
 }
 
 footer .icons {
-  width: 38%;
+  width: 50%;
   display: inline-block;
   margin-bottom: 30px;
 }
 
-footer .icons li, .nav-share .icons li {
+footer .icons li,
+.nav-share .icons li {
   width: 67px;
   height: 67px;
   display: inline-block;
   margin: 0 6px;
 }
 
-footer .icons li a, .nav-share .icons li a {
+footer .icons li a,
+.nav-share .icons li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -707,23 +731,28 @@ footer .icons li a, .nav-share .icons li a {
   transition: all 0.3s linear;
 }
 
-footer .icons li:nth-child(1) a, .nav-share .icons li:nth-child(1) a {
+footer .icons li:nth-child(1) a,
+.nav-share .icons li:nth-child(1) a {
   background-image: url(../img/medium.png)
 }
 
-footer .icons li:nth-child(2) a, .nav-share .icons li:nth-child(2) a {
+footer .icons li:nth-child(2) a,
+.nav-share .icons li:nth-child(2) a {
   background-image: url(../img/telegram.png)
 }
 
-footer .icons li:nth-child(3) a, .nav-share .icons li:nth-child(3) a {
+footer .icons li:nth-child(3) a,
+.nav-share .icons li:nth-child(3) a {
   background-image: url(../img/twitter.png)
 }
 
-footer .icons li:nth-child(4) a, .nav-share .icons li:nth-child(4) a {
+footer .icons li:nth-child(4) a,
+.nav-share .icons li:nth-child(4) a {
   background-image: url(../img/weibo.png)
 }
 
-footer .icons li:nth-child(5) a, .nav-share .icons li:nth-child(5) a {
+footer .icons li:nth-child(5) a,
+.nav-share .icons li:nth-child(5) a {
   background-image: url(../img/weixin.png)
 }
 
@@ -734,14 +763,13 @@ footer .icons li a:hover {
 /* //移动端样式 */
 
 .hamburger {
-  position: fixed;
-  top: 20px;
-  right: 30px;
-  z-index: 2001;
+  position: relative;
+  z-index: 2004;
+  
 }
 
 .hamburger .line {
-  width: 35px;
+  width: 30px;
   height: 3px;
   background-color: #fff;
   display: block;
@@ -789,7 +817,8 @@ footer .icons li a:hover {
   text-align: center;
 }
 
-.mnav .mlogo, #hamburger-1 {
+
+#hamburger-1 ,.mnav-layer{
   display: none;
 }
 
@@ -800,22 +829,41 @@ footer .icons li a:hover {
   z-index: 2000;
 }
 
-.swiper-wrapper, .swiper-slide {
+.swiper-wrapper,
+.swiper-slide {
   height: auto;
 }
-
+.imgc {
+  background: #000;
+  width: 50px;
+  margin: 0 auto;
+}
+.imgc img {
+  width: 80%
+}
 @media screen and (max-width: 773px) {
   .header-box {
-    position: static;
+    /* position: static; */
   }
+  .header .logo {
+    width: 100px;
+}
   #hamburger-1 {
-    display: block;
+    display: inline-block;
+    margin-top: 3px
   }
-  .header, footer .icons {
+  .header>.nav,
+  footer .icons {
     display: none;
+  }
+  .header .logo-box {
+    padding-top: 8px;
+    height: auto;
   }
   .header {
     height: 40px;
+    padding: 0 15px;
+    
   }
   .main {
     margin-top: 0;
@@ -890,27 +938,24 @@ footer .icons li a:hover {
     overflow: hidden;
     background-color: #f8f8f9;
     margin: 0 15px;
+    padding: 0 0 60px 0;
   }
   .swiper-wrapper {
     margin: 0;
-    height: 100%;
-  }
-  .swiper-wrapper, .swiper-slide {
-    height: 100%;
   }
   .swiper-pagination-bullet-active {
     background: #31c27c;
   }
   .swiper-pagination {
-    bottom: 80px !important;
+    bottom: 24px !important;
   }
   .base {
     background-color: #fff;
     width: 100%;
   }
   .main-title {
-    width: 100%;
-    background-size: 35% auto;
+    width: 90%;
+    background-size: 27% auto;
   }
   .title-text {
     font-size: 25px;
@@ -918,7 +963,8 @@ footer .icons li a:hover {
   .title-info {
     font-size: 15px;
   }
-  footer h1, .main-desc {
+  footer h1,
+  .main-desc {
     font-size: 18px;
   }
   .qa h4 {
@@ -927,12 +973,18 @@ footer .icons li a:hover {
   .qa p {
     font-size: 14px;
   }
+  .link span:first-child {
+    display: block;
+  }
+  .link span:nth-child(2) {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 344px) {
   .main-title {
-    width: auto;
-    background-size: 35% auto;
+    width: 80%;
+    background-size: 22% auto;
   }
   .title-text {
     font-size: 20px;
@@ -944,6 +996,7 @@ footer .icons li a:hover {
 
 @media screen and (max-width: 866px) {
   .imgc {
-    text-align: left;
+    text-align: center;
+    margin-left:10px;
   }
 }
