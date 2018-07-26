@@ -365,7 +365,8 @@ body {
 }
 
 .alloc .lpt-hint {
-  color: #E64B51
+  color: #E64B51;
+  font-size: 27px;
 }
 
 .circles {
@@ -572,6 +573,7 @@ a {
   font-weight: bold;
   height: 40px;
   margin: 15px 0;
+  font-size: 18px
 }
 
 .ava-name.lh {
