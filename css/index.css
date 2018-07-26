@@ -1036,6 +1036,9 @@ footer .ercode-box img {
   .link span:nth-child(2) {
     display: none;
   }
+  footer .ercode-box img {
+    width: 15%;
+  }
 }
 
 @media screen and (max-width: 344px) {
