@@ -880,7 +880,9 @@ footer .ercode-box img {
 .imgc img {
   width: 80%
 }
-
+.main-title-wrap:hover {
+  color: #2db969
+}
 @media screen and (max-width: 773px) {
   .header-box {
     /* position: static; */
@@ -1015,6 +1017,7 @@ footer .ercode-box img {
     width: 90%;
     background-size: 27% auto;
   }
+
   .title-text {
     font-size: 25px;
   }

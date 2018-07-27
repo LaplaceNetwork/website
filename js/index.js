@@ -1,5 +1,5 @@
 $(function () {
-  var isMobile = window.innerWidth < 866;
+  var isMobile = window.innerWidth < 773;
   $(".header .nav").on("click", "li", function () {
     var block = $(this).data("block");
     if (block == "cn" || block == "en") {
