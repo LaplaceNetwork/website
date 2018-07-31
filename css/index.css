@@ -152,7 +152,7 @@ body {
 }
 
 .header .logo {
-  width: 129px
+  width: 200px
 }
 
 .fr {
@@ -880,15 +880,17 @@ footer .ercode-box img {
 .imgc img {
   width: 100%
 }
+
 .main-title-wrap:hover {
   color: #2db969
 }
+
 @media screen and (max-width: 773px) {
   .header-box {
     /* position: static; */
   }
   .header .logo {
-    width: 100px;
+    width: 140px;
   }
   #hamburger-1 {
     display: inline-block;
@@ -1017,7 +1019,6 @@ footer .ercode-box img {
     width: 90%;
     background-size: 27% auto;
   }
-
   .title-text {
     font-size: 25px;
   }
