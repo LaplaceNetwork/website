@@ -152,7 +152,7 @@ body {
 }
 
 .header .logo {
-  width: 129px
+  width: 200px
 }
 
 .fr {
@@ -888,7 +888,7 @@ footer .ercode-box img {
     /* position: static; */
   }
   .header .logo {
-    width: 100px;
+    width: 150px;
   }
   #hamburger-1 {
     display: inline-block;
