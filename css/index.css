@@ -577,7 +577,20 @@ a {
 }
 
 .ava-name.lh {
-  line-height: 40px
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content:center;
+justify-content:center;
+-moz-box-pack:center;
+-webkit--moz-box-pack:center;
+box-pack:center;
+align-items:center;
+-webkit-align-items:center;
+box-align:center;
+-moz-box-align:center;
+-webkit-box-align:center;
 }
 
 .ava-title {
@@ -890,7 +903,11 @@ footer .ercode-box img {
     /* position: static; */
   }
   .header .logo {
+<<<<<<< HEAD
     width: 140px;
+=======
+    width: 150px;
+>>>>>>> 8bb00d1e4441b44ebeb67ad8ed1ac5eb4ce56d93
   }
   #hamburger-1 {
     display: inline-block;
