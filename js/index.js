@@ -4,11 +4,14 @@ $(function () {
     var block = $(this).data("block");
     if (block == "cn" || block == "en") {
       switchLanguage(block);
+      switchWhitePaper(block);
     } else {
       handleNav.call(this);
     }
   });
-
+  function switchWhitePaper(block) {
+    $("#download").attr('href', {en:'./laplace_whitepaper_en_v5.3.pdf', cn: './laplace_whitepaper_cn_v5.3.pdf'}[block])
+  }
   function switchLanguage(block) {
     $("[data-local]").each(function () {
       var lan = $(this).data('local');
