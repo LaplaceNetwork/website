@@ -10,8 +10,16 @@ $(function() {
   var isMobile = window.innerWidth < 773;
 
   $(".header .nav").on("click", "li", function() {
-    var block = $(this).data("block");
+    var $this = $(this);
+    var block = $this.data("block");
     if (block == "cn" || block == "en") {
+      if (block == "en") {
+        $this.data("block", "cn");
+        $this.text("中文");
+      } else {
+        $this.data("block", "en");
+        $this.text("ENGLISH");
+      }
       switchLanguage(block);
       switchWhitePaper(block);
     } else {
