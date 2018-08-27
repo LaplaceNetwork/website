@@ -465,6 +465,7 @@ body {
 
 .b-cont {
   line-height: 35px;
+  word-break: break-word;
 }
 
 .b-cont h3 {
