@@ -1,4 +1,5 @@
 var i18n = {
+  lang: "cn",
   cn: {
     lpls: "拉普拉斯",
     alloc: "分配方案",
@@ -207,12 +208,20 @@ var i18n = {
           "拥有10以上互联网人力资源管理工作，参与组建、管理区块链精英团队，曾就职于知名互联网金融、互联网房地产企业。"
         ]
       }
-    ]
+    ],
+    progressCircles: {
+      airdrop: "空投",
+      operation: "运营",
+      team: "团队",
+      found: "基金会",
+      sale: "募集",
+      mining: "挖矿"
+    }
   },
   en: {
     lpls: "Lpls",
     alloc: "Allocation",
-    route: "Road map",
+    route: "Roadmap",
     news: "Latest news",
     qa: "FAQ",
     en: "",
@@ -251,7 +260,7 @@ var i18n = {
     b2b: "B2B data exchange",
     b2c: "B2C digital rights market",
     allocfa: "Allocation schemes",
-    fxzl: "Total Tokens: 10 trillions LPT",
+    fxzl: "Total Tokens: 1 Billion LPT",
     tdbl: "For part of team, annually equally unlock within 3 years",
     snjs: "",
     jsjh: "",
@@ -261,7 +270,7 @@ var i18n = {
     "4ml": "4 months Post-ICO",
     "6ml": "6 months Post-ICO",
     routemap: "Roadmap",
-    cbxy: "edition of protocol finalized",
+    cbxy: "First edition of protocol finalized",
     appline:
       "Official APP comes online, will synchronize the update on iteration protocol later",
     xypgjs: "Construction of credit scores community",
@@ -427,6 +436,15 @@ var i18n = {
           "Ting Li has over 10 years experience in internet human resource management. She is one of the unclutterer and manager of blockchain elite corps. She was hired at well-known internet financial companies and internet real estate companies."
         ]
       }
-    ]
+    ],
+
+    progressCircles: {
+      airdrop: "Airdrop",
+      operation: "Operation",
+      team: "Team",
+      found: "Foundation",
+      sale: "Sale",
+      mining: "Mining"
+    }
   }
 };

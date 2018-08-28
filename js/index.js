@@ -13,6 +13,7 @@ $(function() {
     var $this = $(this);
     var block = $this.data("block");
     if (block == "cn" || block == "en") {
+      i18n.lang = block;
       if (block == "en") {
         $this.data("block", "cn");
         $this.text("中文");
@@ -51,6 +52,7 @@ $(function() {
       bConts.removeClass("en-fix");
     }
     renderContentByi18n(block);
+    renewCircle(i18n.lang);
   }
 
   function handleNav() {
@@ -123,7 +125,7 @@ $(function() {
     tab.addClass("textColor");
     tab.siblings("li").removeClass("textColor");
     if (key === "alloc") {
-      renewCircle();
+      renewCircle(i18n.lang);
     } else if (key == "main") {
     }
   }
