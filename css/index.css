@@ -1109,10 +1109,14 @@ footer .ercode-box img {
   .lpt-info ul {
     display: inline-block;
   }
+
   .lpt-info ul li {
     float: none;
     width: 75%;
     margin: 0 auto;
+  }
+  .lpt-info-en-fix {
+    width: 99% !important;
   }
   .lpter-avatar img {
     width: 60%;

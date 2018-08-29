@@ -57,7 +57,11 @@ $(function() {
 
   function handleNav() {
     var block = $(this).data("block");
-    $(window).scrollTop($("." + block).offset().top - 65);
+    if (block === "cn" || block === "en") {
+      return;
+    }
+    var $window = $(window);
+    $window.scrollTop($("." + block).offset().top - 65);
   }
   $(".mnav-layer .nav").on("click", "li", function() {
     $("#hamburger-1").trigger("click");
@@ -221,7 +225,12 @@ function renderMembers(members) {
   while (i < len) {
     row += cell(members[i]);
     if ((i + 1) % colNumber === 0) {
-      res.push("<ul>" + row + "</ul>");
+      if (i === 3) {
+        res.push("<ul class='lpt-info-en-fix'>" + row + "</ul>");
+      } else {
+        res.push("<ul>" + row + "</ul>");
+      }
+
       row = "";
     }
     i++;
