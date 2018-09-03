@@ -199,11 +199,11 @@ function renderMembers(members) {
     return;
   }
   function cell(data) {
-    var style = data.style || "";
+    var cls = data.cls || "";
     return [
       "<li>",
-      '<div class="lpter-avatar">',
-      '<img src="./img/' + data.avatar + '" alt="" style="' + style + '">',
+      '<div class="lpter-avatar ' + cls + '">',
+      '<img src="./img/' + data.avatar + '" alt="">',
       "</div>",
       '<div class="ava-name lh">',
       " <p>" + data.name + "</p>",

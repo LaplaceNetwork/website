@@ -689,6 +689,9 @@ a {
   border-radius: 50%;
   width: 90%;
 }
+.lpter-avatar-fix img {
+  width: 92%;
+}
 
 .ava-name {
   color: #2db969;
@@ -1144,6 +1147,9 @@ footer .ercode-box img {
   }
   .lpter-avatar img {
     border-radius: 50%;
+    width: 60%;
+  }
+  .lpter-avatar-fix img {
     width: 60%;
   }
   .b-col {
