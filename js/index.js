@@ -199,15 +199,19 @@ function renderMembers(members) {
     return;
   }
   function cell(data) {
+    var style = data.style || "";
     return [
       "<li>",
       '<div class="lpter-avatar">',
-      '<img src="./img/' + data.avatar + '" alt="">',
+      '<img src="./img/' + data.avatar + '" alt="" style="' + style + '">',
       "</div>",
       '<div class="ava-name lh">',
       " <p>" + data.name + "</p>",
       data.ename ? "<span>" + data.ename + "</span>" : "",
       "</div>",
+      "<div class='linkedin-container' title='linkedin'><a class='linkedin' href='",
+      data.linkedin,
+      "'><img src='./img/linkedin.ico'/></a></div>",
       '<div data-local="jrstit" class="ava-title">',
       data.title,
       "</div>",

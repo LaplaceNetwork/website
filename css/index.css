@@ -686,6 +686,7 @@ a {
 }
 
 .lpter-avatar img {
+  border-radius: 50%;
   width: 90%;
 }
 
@@ -722,6 +723,29 @@ a {
 .ava-desc {
   color: #898989;
   text-align: left;
+}
+.linkedin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.linkedin {
+  display: block;
+  color: gray;
+  font-weight: bolder;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 
 .news {
@@ -1119,6 +1143,7 @@ footer .ercode-box img {
     width: 99% !important;
   }
   .lpter-avatar img {
+    border-radius: 50%;
     width: 60%;
   }
   .b-col {

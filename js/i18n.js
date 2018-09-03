@@ -8,7 +8,7 @@ var i18n = {
     qa: "FAQ",
     en: "ENGLISH",
     cn: "中文",
-    lplshy: "拉普拉斯协议",
+    lplshy: "拉普拉斯网络",
     dcenter: "去中心化数据交换协议群",
     whitebook: "白皮书",
     datasee: "支持数据的发现，授权与交易",
@@ -118,7 +118,7 @@ var i18n = {
       },
       {
         q: "协议代币在生态中所起的作用是什么？",
-        a: ["工作量证明激励、协议执行的燃料费、生态伙伴治理以及信用评估投票。"]
+        a: ["工作量证明激励、协议执行的燃料费、生态伙伴治理等。"]
       }
     ],
     cxgz: "持续关注我们的进度",
@@ -133,7 +133,8 @@ var i18n = {
         avatar: "deng.png",
         desc: [
           "上海理工大学计算机专业硕士、瑞典Kristianstad大学嵌入式系统硕士。 金融大数据分析处理高级经理，机器学习工程师，网络爬虫专家，计算机极客， 在研究数据连接的价值有独到见解。曾就职于Citi。"
-        ]
+        ],
+        linkedin: "https://www.linkedin.com/in/feng-deng-606a0366/"
       },
       {
         name: "应俊",
@@ -144,7 +145,35 @@ var i18n = {
           "日本世界500强中国事业部首席技术官",
           "新零售X实验室联合创始人",
           "上海交通大学商学院商业模式导师。"
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/%E4%BF%8A-%E5%BA%94-951151170/"
+      },
+      {
+        name: "李杨",
+        title: "首席技术官",
+        avatar: "liyang.jpeg",
+        desc: [
+          "毕业于中国国防科技大学，软件专家、咨询师、软件架构KOL。负责开发INWECRYPTO多资产钱包和媒体资讯网站，以及第一个区块链社区经营模拟游戏WOB"
+        ],
+        linkedin: "http://www.linkedin.com/in/%E6%89%AC-%E6%9D%8E-175157170/",
+        style: "width:92%"
+      },
+      // {
+      //   name: "Michael Zhu",
+      //   title: "区块链&数据工程师",
+      //   avatar: "zhu.png",
+      //   desc: [
+      //     "澳洲Monash大学计算机科学硕士， 前Citi高级软件工程师，资深区块链开发者。"
+      //   ]
+      // },
+      {
+        name: "Joeann Rey Santiago",
+        title: "首席营销官",
+        avatar: "jrs.png",
+        desc: [
+          "十年以上企业咨询顾问。前Western Union亚太地区营销顾问。涉及市场推广、商务、产品管理和全球资源整合。"
+        ],
+        linkedin: "http://www.linkedin.com/in/joe-santiago-484166170/"
       },
       {
         name: "Yoga Zhao",
@@ -152,31 +181,19 @@ var i18n = {
         avatar: "yoga.png",
         desc: [
           "资深前端开发专家，拥有十年以上企业应用核心前端开发经验。 负责前端渲染引擎项目的技术攻关和架构重构。 现致力于设计互联网、区块链的移动端解决方案与架构， 前端组件化设计的布道者。曾任职于Citi。"
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/yoga-zhao-80b48b66/"
       },
-      {
-        name: "Michael Zhu",
-        title: "区块链&数据工程师",
-        avatar: "zhu.png",
-        desc: [
-          "澳洲Monash大学计算机科学硕士， 前Citi高级软件工程师，资深区块链开发者。"
-        ]
-      },
-      {
-        name: "Joeann Rey Santiago",
-        title: "市场营销",
-        avatar: "jrs.png",
-        desc: [
-          "十年以上企业咨询顾问。前Western Union亚太地区营销顾问。涉及市场推广、商务、产品管理和全球资源整合。"
-        ]
-      },
+
       {
         name: "陈伟平",
         title: "资深移动端开发工程师",
         avatar: "cwp.png",
         desc: [
           "曾就职于国内大型券商、金融机构。主导设计开发多款APP，对IOS、Android底层设计、架构设计有着深入的见解。区块链早期研究者，熟悉区块链原理以及相关技术。精通OC、Swift、JAVA、JavaScript、C等多种语言。"
-        ]
+        ],
+        linkedin:
+          "http://www.linkedin.com/in/%E4%BC%9F%E5%B9%B3-%E9%99%88-717474152/"
       },
       {
         name: "李冬春",
@@ -184,7 +201,8 @@ var i18n = {
         avatar: "li.png",
         desc: [
           "对区块链技术有深入的研究和见解。曾负责多个互联网项目的架构设计、核心业务实现。在前后端开发、云计算平台架构以及devops等方面具有丰富的经验。现负责微服务云计算架构设计、容器化及区块链技术研究工作。"
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/jason-lee-2167438b/"
       },
       {
         name: "刘仁杰",
@@ -192,13 +210,25 @@ var i18n = {
         avatar: "liu.png",
         desc: [
           "参与多个互联网产品设计及开发工作。服务端系统逻辑开发有丰富的开发经验。精通java、javascript等开发语言。"
-        ]
+        ],
+        linkedin:
+          "http://www.linkedin.com/in/%E4%BB%81%E6%9D%B0-%E5%88%98-a5b33011a/"
+      },
+      {
+        name: "刘思雨",
+        title: "运营",
+        avatar: "liusiyu.jpeg",
+        desc: [
+          "英国曼彻斯特大学金融学毕业，六年舞台经验，参与策划主持多场区块链专题活动。"
+        ],
+        linkedin: "http://www.linkedin.com/in/sylvia-liu-a3850471/"
       },
       {
         name: "张函",
         title: "UI设计师",
         avatar: "zhang.png",
-        desc: ["深厚绘画功底，负责移动端UI设计和平面设计。"]
+        desc: ["深厚绘画功底，负责移动端UI设计和平面设计。"],
+        linkedin: "http://www.linkedin.com/in/%E5%87%BD-%E5%BC%A0-aba152170/"
       },
       {
         name: "李婷",
@@ -206,7 +236,8 @@ var i18n = {
         avatar: "liting.png",
         desc: [
           "拥有10以上互联网人力资源管理工作，参与组建、管理区块链精英团队，曾就职于知名互联网金融、互联网房地产企业。"
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/%E5%A9%B7-%E6%9D%8E-33337ba2/"
       }
     ],
     progressCircles: {
@@ -226,7 +257,7 @@ var i18n = {
     qa: "FAQ",
     en: "",
     cn: "",
-    lplshy: "Laplace Protocol",
+    lplshy: "Laplace NetWork",
     dcenter: "Decentralized Data Exchange Protocol Group",
     whitebook: "White paper",
     datasee:
@@ -344,7 +375,7 @@ var i18n = {
       {
         q: "What are the roles of protocol token in the ecosystem?",
         a: [
-          "PoW, fuel costs of protocol executes, ecological partners governance and credit rating vote."
+          "PoW, fuel costs of protocol executes, ecological partners governance, etc."
         ]
       }
     ],
@@ -360,7 +391,8 @@ var i18n = {
         avatar: "deng.png",
         desc: [
           "Eric Deng is a computer science master graduate of University of Shanghai for Science and Technology and embedded system master graduate of Kristianstad University. He is a financial big data analyzing and processing senior manager, machine learning engineer, web crawler specialist and computer geek. He has original ideas about data connection value. He was hired at Citi."
-        ]
+        ],
+        linkedin: "https://www.linkedin.com/in/feng-deng-606a0366/"
       },
       {
         name: "Ray Ying",
@@ -370,7 +402,36 @@ var i18n = {
           "CTO of Fortune global 500 Japan enterprise China division",
           "Co-founder of new retail X lab",
           "Business models mentor of Shanghai Jiao Tong University Business School"
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/%E4%BF%8A-%E5%BA%94-951151170/"
+      },
+      {
+        name: "Yang Li",
+        title: "CTO",
+        avatar: "liyang.jpeg",
+        desc: [
+          "Graduated from National University of Defense Technology in China. The software expert, consultant and KOL architect. was in charge of developing INWECRYPTO (The wallet of multi assets ), media information website and the first simulation game WOB for Block chain community."
+        ],
+        linkedin: "http://www.linkedin.com/in/%E6%89%AC-%E6%9D%8E-175157170/",
+        style: "width:92%"
+      },
+
+      // {
+      //   name: "Michael Zhu",
+      //   title: "Blockchain and data engineer",
+      //   avatar: "zhu.png",
+      //   desc: [
+      //     "Michael Zhu is a computer science master graduate of Monash University. He was the senior software engineer of Citi. He is a senior blockchain developer."
+      //   ]
+      // },
+      {
+        name: "Joeann Rey Santiago",
+        title: "CMO",
+        avatar: "jrs.png",
+        desc: [
+          "Joeann Rey Santiago has over 10 years experience in enterprise consulting. He was a marketing consultant of Western Union Asian-Pacific region and his work includes marketing, business, product management and global resource integration."
+        ],
+        linkedin: "http://www.linkedin.com/in/joe-santiago-484166170/"
       },
       {
         name: "Yoga Zhao",
@@ -378,23 +439,8 @@ var i18n = {
         avatar: "yoga.png",
         desc: [
           "Yoga Zhao is a senior front-end expert developer, he has over 10 years  core development experience in enterprise application. He was responsible for technical breakthroughs and architecture refactoring of front-end rendering engines. Yoga Zhao is now committed to design internet, app-end solutions for blockchain and architecture of blockchain. He is a spreader of front-end componentized design and was hired at Citi."
-        ]
-      },
-      {
-        name: "Michael Zhu",
-        title: "Blockchain and data engineer",
-        avatar: "zhu.png",
-        desc: [
-          "Michael Zhu is a computer science master graduate of Monash University. He was the senior software engineer of Citi. He is a senior blockchain developer."
-        ]
-      },
-      {
-        name: "Joeann Rey Santiago",
-        title: "Marketing person",
-        avatar: "jrs.png",
-        desc: [
-          "Joeann Rey Santiago has over 10 years experience in enterprise consulting. He was a marketing consultant of Western Union Asian-Pacific region and his work includes marketing, business, product management and global resource integration."
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/yoga-zhao-80b48b66/"
       },
       {
         name: "Weiping Chen",
@@ -402,7 +448,9 @@ var i18n = {
         avatar: "cwp.png",
         desc: [
           "Weiping Chen was hired at large domestic securities firms and financial organizations. He was a leading designer of many applications and he has deep understanding of IOS and Android underlying design. He is one of the early blockchain researchers that has a wealth of acknowledge and technique on blockchain. Chen is a master of OC, Swift, JAVA, JavaScript and C, etc."
-        ]
+        ],
+        linkedin:
+          "http://www.linkedin.com/in/%E4%BC%9F%E5%B9%B3-%E9%99%88-717474152/"
       },
       {
         name: "Dongchun Li",
@@ -410,7 +458,8 @@ var i18n = {
         avatar: "li.png",
         desc: [
           "Dongchun Li has deep research and understanding of blockchain technology. He was the principle of many internet projects that was responsible for architecture design and core services. He has rich experience in front-end development, back-end development and cloud computing platform architecture. He is now doing the cloud computing platform architecture micro service design, containerization and blockchain technology research."
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/jason-lee-2167438b/"
       },
       {
         name: "Renjie Liu",
@@ -418,7 +467,18 @@ var i18n = {
         avatar: "liu.png",
         desc: [
           "Renjie Liu has participated in many internet product designs and development. He has rich development experience in logic development of server system. He is a master of java, java script and many development languages."
-        ]
+        ],
+        linkedin:
+          "http://www.linkedin.com/in/%E4%BB%81%E6%9D%B0-%E5%88%98-a5b33011a/"
+      },
+      {
+        name: "Sylvia, Liu",
+        title: "Operation",
+        avatar: "liusiyu.jpeg",
+        desc: [
+          "Sylvia Liu graduated from the UoM, she has 6 years performing experience. She was the moderator and planner of many blockchain events and activities."
+        ],
+        linkedin: "http://www.linkedin.com/in/sylvia-liu-a3850471/"
       },
       {
         name: "Han Zhang",
@@ -426,7 +486,8 @@ var i18n = {
         avatar: "zhang.png",
         desc: [
           "Han Zhang has rich experience in painting. She is responsible for UI and graphic design of mobile terminal."
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/%E5%87%BD-%E5%BC%A0-aba152170/"
       },
       {
         name: "Ting Li",
@@ -434,7 +495,8 @@ var i18n = {
         avatar: "liting.png",
         desc: [
           "Ting Li has over 10 years experience in internet human resource management. She is one of the unclutterer and manager of blockchain elite corps. She was hired at well-known internet financial companies and internet real estate companies."
-        ]
+        ],
+        linkedin: "http://www.linkedin.com/in/%E5%A9%B7-%E6%9D%8E-33337ba2/"
       }
     ],
 
