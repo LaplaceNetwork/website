@@ -214,7 +214,7 @@ var i18n = {
           "http://www.linkedin.com/in/%E4%BB%81%E6%9D%B0-%E5%88%98-a5b33011a/"
       },
       {
-        name: "刘思雨",
+        name: "刘丝雨",
         title: "运营",
         avatar: "liusiyu.jpeg",
         desc: [
