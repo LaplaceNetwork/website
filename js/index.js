@@ -52,7 +52,6 @@ $(function() {
       bConts.removeClass("en-fix");
     }
     renderContentByi18n(block);
-    renewCircle(i18n.lang);
   }
 
   function handleNav() {
@@ -187,12 +186,22 @@ $(function() {
       }
     });
   }
-  renderContentByi18n(lang);
+  switchLanguage(lang);
 });
 function renderContentByi18n(lang) {
   var langData = i18n[lang || "cn"];
+  if (lang === "en") {
+    $(".english").show();
+    $(".chinese").hide();
+  }
+  if (lang === "cn") {
+    $(".english").hide();
+    $(".chinese").show();
+  }
   renderMembers(langData.members);
   renderQAs(langData["questions&answers"]);
+  renewCircle(lang);
+  i18n.lang = lang;
 }
 function renderMembers(members) {
   if (!members || members.length === 0) {
