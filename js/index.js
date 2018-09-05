@@ -6,7 +6,7 @@ $.urlParam = function(name) {
 };
 
 $(function() {
-  var lang = $.urlParam("lang") || "cn";
+  var lang = $.urlParam("lang") || "en";
   var isMobile = window.innerWidth < 773;
 
   $(".header .nav").on("click", "li", function() {
@@ -189,14 +189,14 @@ $(function() {
   switchLanguage(lang);
 });
 function renderContentByi18n(lang) {
-  var langData = i18n[lang || "cn"];
+  var langData = i18n[lang || "en"];
   if (lang === "en") {
-    $(".english").show();
-    $(".chinese").hide();
-  }
-  if (lang === "cn") {
     $(".english").hide();
     $(".chinese").show();
+  }
+  if (lang === "cn") {
+    $(".english").show();
+    $(".chinese").hide();
   }
   renderMembers(langData.members);
   renderQAs(langData["questions&answers"]);
