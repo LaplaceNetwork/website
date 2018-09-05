@@ -172,7 +172,7 @@ var i18n = {
         desc: [
           "十年以上企业咨询顾问。前Western Union亚太地区营销顾问。涉及市场推广、商务、产品管理和全球资源整合。"
         ],
-        linkedin: "http://www.linkedin.com/in/joe-santiago-484166170/"
+        linkedin: "http://www.linkedin.com/in/joesantiago52585/"
       },
       {
         name: "Yoga Zhao",
@@ -429,7 +429,7 @@ var i18n = {
         desc: [
           "Joeann Rey Santiago has over 10 years experience in enterprise consulting. He was a marketing consultant of Western Union Asian-Pacific region and his work includes marketing, business, product management and global resource integration."
         ],
-        linkedin: "http://www.linkedin.com/in/joe-santiago-484166170/"
+        linkedin: "http://www.linkedin.com/in/joesantiago52585/"
       },
       {
         name: "Yoga Zhao",
