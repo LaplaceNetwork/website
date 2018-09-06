@@ -389,6 +389,7 @@ body {
   position: relative;
   margin-bottom: 60px;
   text-align: left;
+  word-break: break-word;
 }
 
 .b-tit:before {
@@ -1162,6 +1163,7 @@ footer .ercode-box img {
   .block .b-tit {
     display: inline-block;
     margin: 0 auto;
+    word-break: break-word;
   }
   #basecontainer {
     position: relative;

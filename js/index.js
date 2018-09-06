@@ -14,15 +14,7 @@ $(function() {
     var block = $this.data("block");
     if (block == "cn" || block == "en") {
       i18n.lang = block;
-      if (block == "en") {
-        $this.data("block", "cn");
-        $this.text("中文");
-      } else {
-        $this.data("block", "en");
-        $this.text("ENGLISH");
-      }
       switchLanguage(block);
-      switchWhitePaper(block);
     } else {
       handleNav.call(this);
     }
@@ -32,7 +24,7 @@ $(function() {
       "href",
       {
         en: "./laplace_whitepaper_en_v5.3.pdf",
-        cn: "./laplace_whitepaper_cn_v5.3.pdf"
+        cn: "./laplace_whitepaper_cn_v5.4.pdf"
       }[block]
     );
   }
@@ -52,6 +44,7 @@ $(function() {
       bConts.removeClass("en-fix");
     }
     renderContentByi18n(block);
+    switchWhitePaper(block);
   }
 
   function handleNav() {
@@ -191,12 +184,14 @@ $(function() {
 function renderContentByi18n(lang) {
   var langData = i18n[lang || "en"];
   if (lang === "en") {
-    $(".english").hide();
-    $(".chinese").show();
+    $(".switchLang")
+      .data("block", "cn")
+      .text("中文");
   }
   if (lang === "cn") {
-    $(".english").show();
-    $(".chinese").hide();
+    $(".switchLang")
+      .data("block", "en")
+      .text("ENGLISH");
   }
   renderMembers(langData.members);
   renderQAs(langData["questions&answers"]);

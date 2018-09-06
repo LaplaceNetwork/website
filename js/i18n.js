@@ -398,7 +398,7 @@ var i18n = {
         title: "CTO",
         avatar: "liyang.jpeg",
         desc: [
-          "Graduated from National University of Defense Technology in China. The software expert, consultant and KOL architect. was in charge of developing INWECRYPTO (The wallet of multi assets ), media information website and the first simulation game WOB for Block chain community."
+          "Graduated from National University of Defense Technology in China. The software expert, consultant and KOL architect. He was in charge of developing INWECRYPTO (The wallet of multi assets ), media information website and the first simulation game WOB for Block chain community."
         ],
         linkedin: "http://www.linkedin.com/in/%E6%89%AC-%E6%9D%8E-175157170/"
       },
