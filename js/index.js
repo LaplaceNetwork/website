@@ -24,7 +24,7 @@ $(function() {
       "href",
       {
         en: "./laplace_whitepaper_en_v5.3.pdf",
-        cn: "./laplace_whitepaper_cn_v5.4.pdf"
+        cn: "./laplace_whitepaper_cn_v5.5.pdf"
       }[block]
     );
   }
