@@ -951,6 +951,30 @@ footer .icons li:nth-child(3) a,
 .nav-share .icons li:nth-child(3) a {
   background-image: url(../img/weibo.png);
 }
+footer .icons li:nth-child(4) a,
+.nav-share .icons li:nth-child(3) a {
+  background-image: url(../img/facebook.png);
+}
+footer .icons li:nth-child(5) a,
+.nav-share .icons li:nth-child(3) a {
+  background-image: url(../img/youtube.png);
+}
+footer .icons li:nth-child(6) a,
+.nav-share .icons li:nth-child(3) a {
+  background-image: url(../img/medium.png);
+}
+footer .icons li:nth-child(7) a,
+.nav-share .icons li:nth-child(3) a {
+  background-image: url(../img/github.png);
+}
+footer .icons li:nth-child(8) a,
+.nav-share .icons li:nth-child(3) a {
+  background-image: url(../img/reddit.png);
+}
+footer .icons li:nth-child(9) a,
+.nav-share .icons li:nth-child(3) a {
+  background-image: url(../img/mail.png);
+}
 
 /* footer .icons li:nth-child(5) a, .nav-share .icons li:nth-child(5) a {
   background-image: url(../img/weixin.png)
