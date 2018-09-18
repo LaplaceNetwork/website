@@ -127,7 +127,7 @@ var i18n = {
     lptgroup: "L P T 团 队",
     members: [
       {
-        name: "邓峰",
+        name: "Eric Deng",
         ename: "Eric Deng",
         title: "创始人 & 首席执行官",
         avatar: "deng.png",
@@ -137,7 +137,7 @@ var i18n = {
         linkedin: "https://www.linkedin.com/in/feng-deng-606a0366/"
       },
       {
-        name: "李杨",
+        name: "Yang Li",
         title: "首席技术官",
         avatar: "liyang.jpeg",
         desc: [
@@ -146,14 +146,11 @@ var i18n = {
         linkedin: "http://www.linkedin.com/in/%E6%89%AC-%E6%9D%8E-175157170/"
       },
       {
-        name: "应俊",
-        ename: "Ray Ying",
+        name: "Ray Ying",
         title: "首席信息官",
         avatar: "ying.png",
         desc: [
-          "日本世界500强中国事业部首席技术官",
-          "新零售X实验室联合创始人",
-          "上海交通大学商学院商业模式导师。"
+          "二十年软件开发经验，前日本OKI中国区多媒体事业部CTO。上海交通大学商学院导师，WBO世界区块链组织链改委员会秘书长。"
         ],
         linkedin: "http://www.linkedin.com/in/%E4%BF%8A-%E5%BA%94-951151170/"
       },
@@ -175,6 +172,24 @@ var i18n = {
         linkedin: "http://www.linkedin.com/in/joesantiago52585/"
       },
       {
+        name: "Andy Duan",
+        title: "产品经理",
+        avatar: "Andy_Duan.jpg",
+        desc: [
+          "上海财经大学管理学硕士，曾就职于美团、58等多个知名互联网公司，精通互联网产品的设计、开发及管理。 在区块链、数字加密技术方面博文广识，发表过数篇研究型文章。"
+        ],
+        linkedin: ""
+      },
+      {
+        name: "Mustang Kong",
+        title: "技术专家",
+        avatar: "Mustang_Kong.jpg",
+        desc: [
+          "国科大硕士，主要研究方向包括大数据实时流式计算分析等。8年的游戏行业的研发经验，3年区块链技术研发经验，拥有丰富的团队管理经验。自身的全栈开发者，成功上线多个千万级项目。区块链网络通讯、数字加密技术方面有很深的研究。"
+        ],
+        linkedin: ""
+      },
+      {
         name: "Yoga Zhao",
         title: "前端工程师",
         avatar: "yoga.png",
@@ -185,7 +200,7 @@ var i18n = {
       },
 
       {
-        name: "陈伟平",
+        name: "Weiping Chen",
         title: "资深移动端开发工程师",
         avatar: "cwp.png",
         desc: [
@@ -195,7 +210,7 @@ var i18n = {
           "http://www.linkedin.com/in/%E4%BC%9F%E5%B9%B3-%E9%99%88-717474152/"
       },
       {
-        name: "李冬春",
+        name: "Dongchun Li",
         title: "资深全栈工程师",
         avatar: "li.png",
         desc: [
@@ -204,37 +219,27 @@ var i18n = {
         linkedin: "http://www.linkedin.com/in/jason-lee-2167438b/"
       },
       {
-        name: "刘仁杰",
-        title: "高级研发工程师",
-        avatar: "liu.png",
-        desc: [
-          "参与多个互联网产品设计及开发工作。服务端系统逻辑开发有丰富的开发经验。精通java、javascript等开发语言。"
-        ],
-        linkedin:
-          "http://www.linkedin.com/in/%E4%BB%81%E6%9D%B0-%E5%88%98-a5b33011a/"
-      },
-      {
-        name: "刘丝雨",
+        name: "Sylvia Liu",
         title: "运营",
         avatar: "liusiyu.jpeg",
         desc: [
-          "英国曼彻斯特大学金融学毕业，六年舞台经验，参与策划主持多场区块链专题活动。"
+          "英国曼彻斯特大学金融学毕业，策划主持近20场区块链专题活动，并参与策划执行规模为700人的第十二届上海金融服务洽谈会区块链论坛。"
         ],
         linkedin: "http://www.linkedin.com/in/sylvia-liu-a3850471/"
       },
       {
-        name: "张函",
+        name: "Han Zhang",
         title: "UI设计师",
         avatar: "zhang.png",
         desc: ["深厚绘画功底，负责移动端UI设计和平面设计。"],
         linkedin: "http://www.linkedin.com/in/%E5%87%BD-%E5%BC%A0-aba152170/"
       },
       {
-        name: "李婷",
+        name: "Ting Li",
         title: "公共关系",
         avatar: "liting.png",
         desc: [
-          "拥有10以上互联网人力资源管理工作，参与组建、管理区块链精英团队，曾就职于知名互联网金融、互联网房地产企业。"
+          "拥有10年以上互联网人力资源管理工作，参与组建、管理区块链精英团队，曾就职于知名互联网金融、互联网房地产企业。"
         ],
         linkedin: "http://www.linkedin.com/in/%E5%A9%B7-%E6%9D%8E-33337ba2/"
       }
@@ -407,9 +412,7 @@ var i18n = {
         title: "CIO",
         avatar: "ying.png",
         desc: [
-          "CTO of Fortune global 500 Japan enterprise China division",
-          "Co-founder of new retail X lab",
-          "Business models mentor of Shanghai Jiao Tong University Business School"
+          "Jun Ying is the ex-CTO of OKI China multimedia division, secretary general of World Blockchain Organization Blockchain Innovation Committee and mentor of Shanghai Jiao Tong University Business School. He has twenty years experience in software engineering."
         ],
         linkedin: "http://www.linkedin.com/in/%E4%BF%8A-%E5%BA%94-951151170/"
       },
@@ -422,6 +425,7 @@ var i18n = {
       //     "Michael Zhu is a computer science master graduate of Monash University. He was the senior software engineer of Citi. He is a senior blockchain developer."
       //   ]
       // },
+
       {
         name: "Joeann Rey Santiago",
         title: "CMO",
@@ -430,6 +434,24 @@ var i18n = {
           "Joeann Rey Santiago has over 10 years experience in enterprise consulting. He was a marketing consultant of Western Union Asian-Pacific region and his work includes marketing, business, product management and global resource integration."
         ],
         linkedin: "http://www.linkedin.com/in/joesantiago52585/"
+      },
+      {
+        name: "Andy Duan",
+        title: "Product Manager",
+        avatar: "Andy_Duan.jpg",
+        desc: [
+          "Andy Duan holds a master’s degree in management from the Shanghai University of Finance and Economics. He worked at many well-known Internet companies such as Meituan and 58. He is proficient in the design, development and management of Internet products and has deep knowledge in blockchain and data encryption technologies. Duan has published several research-based articles about blockchain technology."
+        ],
+        linkedin: ""
+      },
+      {
+        name: "Mustang Kong",
+        title: "Technical Expert",
+        avatar: "Mustang_Kong.jpg",
+        desc: [
+          "Mustang Kong holds a master's degree in computer management from the Chinese Academy of Sciences. Kong is highly interested in the study of real-time streaming analysis of big data. He has 8 years experience in the game industry, 3 years experience in blockchain technology development, and extensive team management experience. As a full-stack developer， Kong successfully launched tens of millions of projects. Wu has a profound knowledge and an extensive background in blockchain network communication and digital encryption technologies."
+        ],
+        linkedin: ""
       },
       {
         name: "Yoga Zhao",
@@ -460,21 +482,11 @@ var i18n = {
         linkedin: "http://www.linkedin.com/in/jason-lee-2167438b/"
       },
       {
-        name: "Renjie Liu",
-        title: "Senior R&D Engineer",
-        avatar: "liu.png",
-        desc: [
-          "Renjie Liu has participated in many internet product designs and development. He has rich development experience in logic development of server system. He is a master of java, java script and many development languages."
-        ],
-        linkedin:
-          "http://www.linkedin.com/in/%E4%BB%81%E6%9D%B0-%E5%88%98-a5b33011a/"
-      },
-      {
-        name: "Sylvia, Liu",
+        name: "Sylvia Liu",
         title: "Operation",
         avatar: "liusiyu.jpeg",
         desc: [
-          "Sylvia Liu graduated from the UoM, she has 6 years performing experience. She was the moderator and planner of many blockchain events and activities."
+          "Sylvia Liu graduated from the UoM,. She was the moderator and planner of around 20 blockchain events and activities.She planned the 12th Shanghai Financial Services Forum-Blockchain Forum, which more than 700 people attended."
         ],
         linkedin: "http://www.linkedin.com/in/sylvia-liu-a3850471/"
       },
