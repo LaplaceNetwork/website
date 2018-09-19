@@ -178,7 +178,7 @@ var i18n = {
         desc: [
           "上海财经大学管理学硕士，曾就职于美团、58等多个知名互联网公司，精通互联网产品的设计、开发及管理。 在区块链、数字加密技术方面博文广识，发表过数篇研究型文章。"
         ],
-        linkedin: ""
+        linkedin: "https://www.linkedin.com/in/andy-duan-a55b2396/"
       },
       {
         name: "Mustang Kong",
@@ -187,7 +187,7 @@ var i18n = {
         desc: [
           "国科大硕士，主要研究方向包括大数据实时流式计算分析等。8年的游戏行业的研发经验，3年区块链技术研发经验，拥有丰富的团队管理经验。自身的全栈开发者，成功上线多个千万级项目。区块链网络通讯、数字加密技术方面有很深的研究。"
         ],
-        linkedin: ""
+        linkedin: "http://linkedin.com/in/zhigang-gong-6018b39a"
       },
       {
         name: "Yoga Zhao",
@@ -442,7 +442,7 @@ var i18n = {
         desc: [
           "Andy Duan holds a master’s degree in management from the Shanghai University of Finance and Economics. He worked at many well-known Internet companies such as Meituan and 58. He is proficient in the design, development and management of Internet products and has deep knowledge in blockchain and data encryption technologies. Duan has published several research-based articles about blockchain technology."
         ],
-        linkedin: ""
+        linkedin: "https://www.linkedin.com/in/andy-duan-a55b2396/"
       },
       {
         name: "Mustang Kong",
@@ -451,7 +451,7 @@ var i18n = {
         desc: [
           "Mustang Kong holds a master's degree in computer management from the Chinese Academy of Sciences. Kong is highly interested in the study of real-time streaming analysis of big data. He has 8 years experience in the game industry, 3 years experience in blockchain technology development, and extensive team management experience. As a full-stack developer， Kong successfully launched tens of millions of projects. Wu has a profound knowledge and an extensive background in blockchain network communication and digital encryption technologies."
         ],
-        linkedin: ""
+        linkedin: "http://linkedin.com/in/zhigang-gong-6018b39a"
       },
       {
         name: "Yoga Zhao",
