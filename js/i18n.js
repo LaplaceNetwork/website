@@ -251,7 +251,8 @@ var i18n = {
       found: "基金会",
       sale: "募集",
       mining: "挖矿"
-    }
+    },
+    telegram_url: "https://t.me/LaplaceNetwork_CN"
   },
   en: {
     lpls: "Lpls",
@@ -509,7 +510,6 @@ var i18n = {
         linkedin: "http://www.linkedin.com/in/%E5%A9%B7-%E6%9D%8E-33337ba2/"
       }
     ],
-
     progressCircles: {
       airdrop: "Airdrop",
       operation: "Operation",
@@ -517,6 +517,7 @@ var i18n = {
       found: "Foundation",
       sale: "Sale",
       mining: "Mining"
-    }
+    },
+    telegram_url: "https://t.me/LaplaceNetwork_EN"
   }
 };

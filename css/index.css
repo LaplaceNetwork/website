@@ -973,6 +973,10 @@ footer .icons li:nth-child(8) a,
 }
 footer .icons li:nth-child(9) a,
 .nav-share .icons li:nth-child(3) a {
+  background-image: url(../img/steemit.png);
+}
+footer .icons li:nth-child(10) a,
+.nav-share .icons li:nth-child(3) a {
   background-image: url(../img/mail.png);
 }
 

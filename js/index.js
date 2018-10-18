@@ -187,11 +187,13 @@ function renderContentByi18n(lang) {
     $(".switchLang")
       .data("block", "cn")
       .text("中文");
+    $("#telegram_link").prop("href", langData["telegram_url"]);
   }
   if (lang === "cn") {
     $(".switchLang")
       .data("block", "en")
       .text("ENGLISH");
+    $("#telegram_link").prop("href", langData["telegram_url"]);
   }
   renderMembers(langData.members);
   renderQAs(langData["questions&answers"]);
