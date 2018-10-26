@@ -252,7 +252,11 @@ var i18n = {
       sale: "募集",
       mining: "挖矿"
     },
-    telegram_url: "https://t.me/LaplaceNetwork_CN"
+    telegram_url: "https://t.me/LaplaceNetwork_CN",
+    intro_video_title: "拉普拉斯网络简介",
+    intro_video_content:
+      "拉普拉斯网络简称LPT，是一套基于区块链中心化概念数据交换协议群，支持数据的发现，授权与交易。",
+    intro_video_url: "./video/intro_cn.mp4"
   },
   en: {
     lpls: "Lpls",
@@ -518,6 +522,10 @@ var i18n = {
       sale: "Sale",
       mining: "Mining"
     },
-    telegram_url: "https://t.me/LaplaceNetwork_EN"
+    telegram_url: "https://t.me/LaplaceNetwork_EN",
+    intro_video_title: "Intro to Laplace Network",
+    intro_video_content:
+      "Laplace Network (LPT) is a data exchange protocol group based on decentralization concept of blockchain. The protocol group supports data discovery, authorization and transaction.",
+    intro_video_url: "./video/intro_en.mp4"
   }
 };

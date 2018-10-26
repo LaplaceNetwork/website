@@ -19,6 +19,57 @@ $(function() {
       handleNav.call(this);
     }
   });
+  playVideoList();
+
+  function playVideoList() {
+    var $container = $("#video_list");
+    var videos = [
+      { url: "./video/qianbao.mp4" },
+      { url: "./video/lpt-pay.mp4", actived: true }
+    ];
+    var len = videos.length;
+    function renderList(list) {
+      var content = list.map(function(item, i) {
+        var position = null;
+        if (i === 0) {
+          position = "start";
+        } else if (i === len - 1) {
+          position = "end";
+        }
+        return createVideoListItem(item, position);
+      });
+      $container.html("").html(content);
+    }
+
+    $container.on("click", ".cover", function(e) {
+      var position = e.currentTarget.dataset.position;
+      if (position === "start") {
+        videos.forEach(function(v) {
+          delete v.actived;
+        });
+        var tmp = videos.shift();
+        videos.push(tmp);
+        videos[1].actived = true;
+        renderList(videos);
+      }
+    });
+    renderList(videos);
+  }
+  function createVideoListItem(item, position) {
+    return [
+      "<li>",
+      '<div data-position="' +
+        position +
+        '" class=" ' +
+        (item.actived ? "cover-hidden" : "cover") +
+        '"/>',
+      '<video controls="controls" ',
+      'width="' + (item.actived ? "300" : "100") + '"',
+      'src="' + item.url + '">',
+      "</video>",
+      "</li>"
+    ].join("");
+  }
   function switchWhitePaper(block) {
     $("#download").attr(
       "href",
@@ -188,12 +239,14 @@ function renderContentByi18n(lang) {
       .data("block", "cn")
       .text("中文");
     $("#telegram_link").prop("href", langData["telegram_url"]);
+    $("#intro_video_url").prop("src", langData["intro_video_url"]);
   }
   if (lang === "cn") {
     $(".switchLang")
       .data("block", "en")
       .text("ENGLISH");
     $("#telegram_link").prop("href", langData["telegram_url"]);
+    $("#intro_video_url").prop("src", langData["intro_video_url"]);
   }
   renderMembers(langData.members);
   renderQAs(langData["questions&answers"]);
