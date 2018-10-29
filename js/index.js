@@ -24,8 +24,8 @@ $(function() {
   function playVideoList() {
     var $container = $("#video_list");
     var videos = [
-      { url: "./video/qianbao.mp4" },
-      { url: "./video/lpt-pay.mp4", actived: true }
+      { url: "./video/qianbao.mp4", label: "钱包App测试版操作示范" },
+      { url: "./video/lpt-pay.mp4", actived: true, label: "LPT安卓App操作示范" }
     ];
     var len = videos.length;
     function renderList(list) {
@@ -56,6 +56,12 @@ $(function() {
     renderList(videos);
   }
   function createVideoListItem(item, position) {
+    var width = 300;
+    if (isMobile) {
+      width = item.actived ? "200" : "100";
+    } else {
+      width = item.actived ? "300" : "100";
+    }
     return [
       "<li>",
       '<div data-position="' +
@@ -64,9 +70,10 @@ $(function() {
         (item.actived ? "cover-hidden" : "cover") +
         '"/>',
       '<video controls="controls" ',
-      'width="' + (item.actived ? "300" : "100") + '"',
+      'width="' + width + '"',
       'src="' + item.url + '">',
       "</video>",
+      "<label>" + item.label + "</label>",
       "</li>"
     ].join("");
   }

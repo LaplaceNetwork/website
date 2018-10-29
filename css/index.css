@@ -420,7 +420,9 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
+.video-list video {
+  box-shadow: 0px 5px 10px #292929;
+}
 .base {
   background-color: #f8f8f9;
 }
@@ -1311,6 +1313,15 @@ footer .ercode-box img {
   footer .ercode-box img {
     width: 30%;
   }
+  .intro-title {
+    height: 40%;
+  }
+  .intro-main {
+    height: auto;
+  }
+  .app_intro {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 344px) {
@@ -1323,6 +1334,9 @@ footer .ercode-box img {
   }
   .title-info {
     font-size: 13px;
+  }
+  .intro-title {
+    height: 30%;
   }
 }
 
