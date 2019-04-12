@@ -25,7 +25,11 @@ $(function() {
     var $container = $("#video_list");
     var videos = [
       { url: "./video/qianbao.mp4", label: "钱包App测试版操作示范" },
-      { url: "./video/lpt-pay.mp4", actived: true, label: "LPT安卓App操作示范" }
+      {
+        url: "./video/lpt-pay.mp4",
+        actived: true,
+        label: "Laplace安卓App操作示范"
+      }
     ];
     var len = videos.length;
     function renderList(list) {
