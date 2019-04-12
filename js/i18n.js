@@ -124,7 +124,7 @@ var i18n = {
     cxgz: "持续关注我们的进度",
     dywm: "订阅我们的免费资讯",
     gz: "关注",
-    lptgroup: "L P T 团 队",
+    lptgroup: "Laplace 团队",
     members: [
       {
         name: "Eric Deng",
