@@ -172,15 +172,6 @@ var i18n = {
         linkedin: "http://www.linkedin.com/in/joesantiago52585/"
       },
       {
-        name: "Andy Duan",
-        title: "产品经理",
-        avatar: "Andy_Duan.jpg",
-        desc: [
-          "上海财经大学管理学硕士，曾就职于美团、58等多个知名互联网公司，精通互联网产品的设计、开发及管理。 在区块链、数字加密技术方面博文广识，发表过数篇研究型文章。"
-        ],
-        linkedin: "https://www.linkedin.com/in/andy-duan-a55b2396/"
-      },
-      {
         name: "Mustang Kong",
         title: "技术专家",
         avatar: "Mustang_Kong.jpg",
@@ -439,15 +430,6 @@ var i18n = {
           "Joeann Rey Santiago has over 10 years experience in enterprise consulting. He was a marketing consultant of Western Union Asian-Pacific region and his work includes marketing, business, product management and global resource integration."
         ],
         linkedin: "http://www.linkedin.com/in/joesantiago52585/"
-      },
-      {
-        name: "Andy Duan",
-        title: "Product Manager",
-        avatar: "Andy_Duan.jpg",
-        desc: [
-          "Andy Duan holds a master’s degree in management from the Shanghai University of Finance and Economics. He worked at many well-known Internet companies such as Meituan and 58. He is proficient in the design, development and management of Internet products and has deep knowledge in blockchain and data encryption technologies. Duan has published several research-based articles about blockchain technology."
-        ],
-        linkedin: "https://www.linkedin.com/in/andy-duan-a55b2396/"
       },
       {
         name: "Mustang Kong",
