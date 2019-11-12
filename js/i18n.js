@@ -137,15 +137,6 @@ var i18n = {
         linkedin: "https://www.linkedin.com/in/feng-deng-606a0366/"
       },
       {
-        name: "Yang Li",
-        title: "首席技术官",
-        avatar: "liyang.jpeg",
-        desc: [
-          "毕业于中国国防科技大学，软件专家、咨询师、软件架构KOL。负责开发INWECRYPTO多资产钱包和媒体资讯网站，以及第一个区块链社区经营模拟游戏WOB"
-        ],
-        linkedin: "http://www.linkedin.com/in/%E6%89%AC-%E6%9D%8E-175157170/"
-      },
-      {
         name: "Ray Ying",
         title: "首席信息官",
         avatar: "ying.png",
@@ -393,15 +384,6 @@ var i18n = {
           "Eric Deng is a computer science master graduate of University of Shanghai for Science and Technology and embedded system master graduate of Kristianstad University. He is a financial big data analyzing and processing senior manager, machine learning engineer, web crawler specialist and computer geek. He has original ideas about data connection value. He was hired at Citi."
         ],
         linkedin: "https://www.linkedin.com/in/feng-deng-606a0366/"
-      },
-      {
-        name: "Yang Li",
-        title: "CTO",
-        avatar: "liyang.jpeg",
-        desc: [
-          "Graduated from National University of Defense Technology in China. The software expert, consultant and KOL architect. He was in charge of developing INWECRYPTO (The wallet of multi assets ), media information website and the first simulation game WOB for Block chain community."
-        ],
-        linkedin: "http://www.linkedin.com/in/%E6%89%AC-%E6%9D%8E-175157170/"
       },
       {
         name: "Ray Ying",
